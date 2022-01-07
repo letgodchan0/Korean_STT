@@ -87,3 +87,7 @@ python ./bin/prediction.py --model_path $model_path --audio_path $audio_path --s
 ## - References
 - kospeech:
 https://github.com/sooftware/kospeech
+- mingchin:
+https://mingchin.tistory.com/152?category=986268
+- cho:
+https://github.com/JaeYoung-Cho-95/Foreigner_Speech_Recognition 
