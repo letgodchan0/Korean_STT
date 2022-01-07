@@ -23,22 +23,22 @@ ___
 </br></br>
 
 ## Module Installation
-전처리, 학습, 예측, 예측한 결과 저장에 필요한 모든 모듈을 포함 시킨 파일로 가상환경을 생성하고 Python 3.8을 사용했습니다.
+- 전처리, 학습, 예측, 예측한 결과 저장에 필요한 모든 모듈을 포함 시킨 파일로 가상환경을 생성하고 Python 3.8을 사용했습니다.
 ```
 pip install -r requirements.txt
 ```
 </br></br>
 
 ## Preprocessing
-output_unit은 kospeech가 제공하는 3가지 방식을, preprocess_mode는 '%'를 읽는 방식('퍼센트' 또는 '프로'를)을 선택하는 것으로 상황에 맞게 지정하시면 됩니다.
+- output_unit은 kospeech가 제공하는 3가지 방식을, preprocess_mode는 '%'를 읽는 방식('퍼센트' 또는 '프로')을 선택하는 것으로 상황에 맞게 지정하시면 됩니다.
 ```
 !python ./dataset/kspon/main.py --dataset_path $dataset_path --vocab_dest $vacab_dict_destination --output_unit 'character' --preprocess_mode 'phonetic' 
 ```
 </br></br>
 
 ## Train
-학습에 실행코드를 실행하기 위해서는 옵션(epoch, batch_size, spec_augment emd)등을 수정하거나 이외에도 변경해주어야 할 사항들이 있습니다.
-자세한 사항은 [블로그](https://velog.io/@letgodchan0/%EC%9D%8C%EC%84%B1%EC%9D%B8%EC%8B%9D-%ED%95%9C%EA%B5%AD%EC%96%B4-STT-3)를 참고해주시면 감사하겠습니다.
+- 학습에 실행코드를 실행하기 위해서는 옵션(epoch, batch_size, spec_augment emd)등을 수정하거나 이외에도 변경해주어야 할 사항들이 있습니다.
+- 자세한 사항은 [블로그](https://velog.io/@letgodchan0/%EC%9D%8C%EC%84%B1%EC%9D%B8%EC%8B%9D-%ED%95%9C%EA%B5%AD%EC%96%B4-STT-3)를 참고해주시면 감사하겠습니다.
 ```
 !python ./bin/main.py model=ds2 train=ds2_train train.dataset_path=$dataset_path
 ```
