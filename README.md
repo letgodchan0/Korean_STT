@@ -2,7 +2,7 @@
   
 # Foreigner's Korean speech recognition of voice
   
-###Korean STT 모델 개발
+### Korean STT 모델 개발
 
 ___
 </div>
